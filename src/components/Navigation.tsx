@@ -22,7 +22,7 @@ const Navigation = () => {
     }
 
   return (
-      <div className='flex xl:justify-content-between border-1 lg:min-w-screen p-2 m-auto'>
+      <div className='flex xl:justify-content-between lg:min-w-screen p-2 m-auto'>
           <Button icon="pi pi-angle-left" iconPos="left" label="Previous"  onClick={goToPrev} className='flex align-items-center' />
           <Button icon="pi pi-angle-right" iconPos="right" label="Next" onClick={goToNext}  className='flex align-items-center' />
       </div>
