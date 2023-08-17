@@ -1,16 +1,6 @@
 import {Button} from "primereact/button";
-import {ProgressBar} from "primereact/progressbar";
 import {useState} from "react";
 import Slides from "./Slides";
-import styled from "styled-components";
-
-const BtnContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-`
 
 const Navigation = () => {
     const [current, setCurrent] = useState(0);
@@ -32,10 +22,10 @@ const Navigation = () => {
     }
 
   return (
-      <BtnContainer>
-          <Button icon="pi pi-angle-left" label="Previous"  onClick={goToPrev} />
-          <Button icon="pi pi-angle-right" iconPos="right" label="Next" onClick={goToNext} />
-      </BtnContainer>
+      <div className='flex xl:justify-content-between border-1 lg:min-w-screen p-2 m-auto'>
+          <Button icon="pi pi-angle-left" iconPos="left" label="Previous"  onClick={goToPrev} className='flex align-items-center' />
+          <Button icon="pi pi-angle-right" iconPos="right" label="Next" onClick={goToNext}  className='flex align-items-center' />
+      </div>
   )
 }
 
