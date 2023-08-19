@@ -5,7 +5,7 @@ import PageSectionHeader from "../components/PageContent/PageSectionHeader";
 import Header from "../components/Common/NavSidebar";
 import NavSidebar from "../components/Common/NavSidebar";
 
-const AboutMe = (props) => {
+const ContactMe = (props) => {
 
     return (
         <>
@@ -22,4 +22,4 @@ const AboutMe = (props) => {
     )
 };
 
-export default AboutMe;
+export default ContactMe;

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "email",
+    "context": "",
+    "icon": ""
+  },
+  {
+    "id": 2,
+    "title": "twitter",
+    "context": "",
+    "icon": ""
+  },
+  {
+    "id": 3,
+    "title": "github",
+    "context": "",
+    "icon": "",
+    "url": ""
+  },
+  {
+    "id": 4,
+    "title": "linkedIn",
+    "context": "",
+    "icon": "",
+    "url": ""
+  },
+  {
+    "id": 5,
+    "title": "slack",
+    "context": "",
+    "icon": "",
+    "url": ""
+  }
+]

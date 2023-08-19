@@ -2,23 +2,21 @@ import {Button} from "primereact/button";
 import {useState} from "react";
 import Slides from "./Slides";
 
-const Navigation = () => {
+const SlidesNavigation = ({ routes }) => {
+    const [history, setHistory] = useState([Array(20).fill(null)]);
     const [current, setCurrent] = useState(0);
-    const slides = [Slides];
-    console.log(slides)
+    const currentSlides = history[current];
+
     function goToPrev() {
-        if (slides.length > 0 && setCurrent > 0) {
-            console.log(slides.length)
-            console.log("current")
-            setCurrent(current - 1)
-        }
+        // if (slides.length > 0 && setCurrent > 0) {
+        //     console.log(slides.length)
+        //     console.log("current")
+        //     setCurrent(current - 1)
+        // }
     }
 
-    function goToNext() {
-        if (current < slides.length - 1 ) {
-            console.log(current)
-            setCurrent(current + 1)
-        }
+    function goToNext(nextSlide) {
+      const nextHistory = [...history.slice(0, current + 1), nextSlide]
     }
 
   return (
@@ -29,4 +27,4 @@ const Navigation = () => {
   )
 }
 
-export default Navigation;
+export default SlidesNavigation;
